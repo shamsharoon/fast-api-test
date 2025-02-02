@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello, FastAPI on Heroku!"}
+    return {"message": "Hello, FastAPI on Render!"}
 
 @app.get("/ping")
 def ping():
