@@ -6,6 +6,6 @@ app = FastAPI()
 def read_root():
     return {"message": "Hello, FastAPI on Heroku!"}
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int):
-    return {"item_id": item_id, "value": "This is a test item"}
+@app.get("/ping")
+def ping():
+    return {"message": "pong"}
